@@ -1,0 +1,279 @@
+@import url('https://fonts.cdnfonts.com/css/pixelary');
+@import url('https://fonts.cdnfonts.com/css/vcr-jp');
+
+.scroll-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.scroll-section {
+    width: 100%;
+    height: 100vh;
+    background-size:  cover;
+    scroll-snap-align: start;
+}
+.barcode-font {
+    font-family: 'Pixelary', sans-serif;
+}
+.vcr-font {
+    font-family: 'VCR-JP', sans-serif;
+}
+/* general */
+html {
+    min-height:100%;
+    position:relative;
+}
+
+body {
+    height:100%;
+    overflow: hidden; 
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-anchor: none;
+    overscroll-behavior: contain;
+    viewport-fit: cover;
+    background: rgb(83,4,4) !important;
+    background: -moz-linear-gradient(180deg, rgba(83,4,4,1) 0%, rgba(19,3,0,1) 100%) !important;
+    background: -webkit-linear-gradient(180deg, rgba(83,4,4,1) 0%, rgba(19,3,0,1) 100%) !important;
+    background: linear-gradient(180deg, rgba(83,4,4,1) 0%, rgba(19,3,0,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#530404",endColorstr="#130300",GradientType=1) !important;
+}
+.bg {
+    visibility: hidden;
+    overflow:hidden;
+}
+.bg > * {
+    visibility: visible;
+}
+.bg > *:active {
+    visibility: hidden;
+}
+#startbu {
+    width:100%;
+    height:100%;
+    background: #ffffff00;
+    z-index:3;
+}
+html #startbu:hover {
+    background: rgb(83,4,4);
+    background: -moz-linear-gradient(180deg, rgba(83,4,4,1) 0%, rgba(107,10,10,1) 50%, rgba(19,3,0,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(83,4,4,1) 0%, rgba(107,10,10,1) 50%, rgba(19,3,0,1) 100%);
+    background: linear-gradient(180deg, rgba(83,4,4,1) 0%, rgba(107,10,10,1) 50%, rgba(19,3,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#530404",endColorstr="#130300",GradientType=1);
+}
+html #startbu:active {
+    background: rgb(83,4,4);
+    background: -moz-linear-gradient(180deg, rgba(83,4,4,1) 0%, rgba(107,10,10,1) 50%, rgba(19,3,0,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(83,4,4,1) 0%, rgba(107,10,10,1) 50%, rgba(19,3,0,1) 100%);
+    background: linear-gradient(180deg, rgba(83,4,4,1) 0%, rgba(107,10,10,1) 50%, rgba(19,3,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#530404",endColorstr="#130300",GradientType=1);
+}
+.gradient-text {
+    background: rgb(164,0,255);
+    background: linear-gradient(90deg, rgba(164,0,255,1) 0%, rgba(255,0,200,1) 100%);
+    font-family: 'CUSTOM', sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.startbutton {
+    width: 200px !important; 
+    height:200px;
+    border-radius: 50px;
+    border: 10px;
+    background: url('../media/500x500.svg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    /* box-shadow:  20px 20px 60px #bc6bb1,
+                 -20px -20px 60px #fe91ef; */
+}
+.startbutton:hover {
+    width: 250px !important; 
+    height:250px;
+    border-radius:62.5px;
+    background: url('../media/500x500.svg');
+    transition: all 0.2s ease-in-out;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.startbutton:active {
+    width: 220px !important; 
+    height:220px;
+    border-radius: 55px;
+    visibility: visible;
+    background: url('../media/500x500.svg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    /* box-shadow: inset 20px 20px 60px #bc6bb1,
+                inset -20px -20px 60px #fe91ef; */
+}
+
+.select-button {
+    transition: all 0.3s ease-in-out;
+    height:100%;
+    width: 100%;
+}
+.select-button:hover {
+    transform: scale(1.1);
+}
+.select-button:active {
+    transform: scale(0.9);
+    transition: all 0.05s ease-in-out;
+}
+
+/* psuedo bootstrap utils */
+.pe-all {
+    pointer-events: all;
+}
+.z-13 {
+    z-index: 13;
+}
+
+/* pages */
+#home {
+    position:absolute;
+    background: rgb(222,9,9);
+    background: -moz-linear-gradient(180deg, rgba(222,9,9,1) 0%, rgba(111,24,24,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(222,9,9,1) 0%, rgba(111,24,24,1) 100%);
+    background: linear-gradient(180deg, rgba(222,9,9,1) 0%, rgba(111,24,24,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#de0909",endColorstr="#6f1818",GradientType=1);
+    visibility: hidden;
+    bottom:5%;
+    top:5%;
+    left:5%;
+    right:5%;
+    width:90%;
+    height:90%;
+    border-radius: 10px;
+    border: 10px #ffffff solid;
+    transition: none;
+}
+#home:target {
+    visibility: visible;
+    animation-name: scale-up-center;
+    animation-duration: 0.7s;
+    transition: 0.1s;
+}
+#about-me {
+    position:absolute;
+    overflow: auto;
+    background: rgb(150,82,255);
+    background: -moz-linear-gradient(180deg, rgba(150,82,255,1) 0%, rgba(58,0,255,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(150,82,255,1) 0%, rgba(58,0,255,1) 100%);
+    background: linear-gradient(180deg, rgba(150,82,255,1) 0%, rgba(58,0,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9652ff",endColorstr="#3a00ff",GradientType=1);
+    visibility: hidden;
+    z-index: 11;
+    bottom:5%;
+    top:5%;
+    left:5%;
+    right:5%;
+    width:90%;
+    height:90%;
+    border-radius: 10px;
+    border: 10px #ffffff solid;
+}
+#about-me:target {
+    visibility: visible;
+}
+
+/* animations */
+.slide-in-blurred-top {
+	-webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-4-24 13:44:57
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-blurred-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 5s ease-out alternate ;
+	        animation: scale-up-center 5s ease-out alternate ;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
