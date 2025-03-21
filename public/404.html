@@ -1,4 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 Not Found</title>
+  <link rel="stylesheet" type="text/css" href="css/404.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script type="text/javascript" src="./js/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.js"></script>
+</head>
+<body>
+  <div class="background-text"><b>Page not found!</b></div>
+  <div class="background-subtext">Click to return home.</div>
+  
+  <img src="https://placehold.co/150x100.png?text=404" alt="404 Not Found" class="dvd-logo" id="dvdLogo">
+
+  <script>
+    const dvd = document.getElementById('dvdLogo');
+
+    let x = Math.random() * (window.innerWidth - dvd.clientWidth);
+    let y = Math.random() * (window.innerHeight - dvd.clientHeight);
     
+    let dx = 2;
+    let dy = 2;
+
+    function animate() {
+      x += dx;
+      y += dy;
+      
+      if (x <= 0 || x + dvd.clientWidth >= window.innerWidth) {
+        dx = -dx;
+      }
+      if (y <= 0 || y + dvd.clientHeight >= window.innerHeight) {
+        dy = -dy;
+      }
+      
+      dvd.style.left = x + 'px';
+      dvd.style.top = y + 'px';
+      
+      requestAnimationFrame(animate);
+    }
+    
+    animate();
+
+    document.addEventListener('click', function() {
+      window.location.href = '/';
+    });
+  </script>
+</body>
 </html>
