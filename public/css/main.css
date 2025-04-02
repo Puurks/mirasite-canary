@@ -200,23 +200,23 @@ html #startbu:active {
 
 
   
-  body::-webkit-scrollbar {
+  *::-webkit-scrollbar {
     width: var(--sb-size)
   }
   
-  body::-webkit-scrollbar-track {
+  *::-webkit-scrollbar-track {
     background: var(--sb-track-color);
     border-radius: 3px;
   }
   
-  body::-webkit-scrollbar-thumb {
+  *::-webkit-scrollbar-thumb {
     background: var(--sb-thumb-color);
     border-radius: 3px;
     border: 2px solid #670000;
   }
   
   @supports not selector(::-webkit-scrollbar) {
-    body {
+    * {
       scrollbar-color: var(--sb-thumb-color)
                        var(--sb-track-color);
     }
