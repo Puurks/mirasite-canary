@@ -31,9 +31,6 @@ html {
 }
 
 body {
-    --sb-track-color: #74818c;
-    --sb-thumb-color: #a90000;
-    --sb-size: 14px;
     height:100%;
     overflow: hidden; 
     pointer-events: none;
@@ -199,28 +196,43 @@ html #startbu:active {
 }
 
 
-  
-  *::-webkit-scrollbar {
-    width: var(--sb-size)
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #750000 #DFE9EB;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
   }
   
-  *::-webkit-scrollbar-track {
-    background: var(--sb-track-color);
-    border-radius: 3px;
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
   }
   
   *::-webkit-scrollbar-thumb {
-    background: var(--sb-thumb-color);
-    border-radius: 3px;
-    border: 2px solid #670000;
+    border-radius: 5px;
+    background-color: #750000;
   }
   
-  @supports not selector(::-webkit-scrollbar) {
-    * {
-      scrollbar-color: var(--sb-thumb-color)
-                       var(--sb-track-color);
-    }
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #BC0000;
   }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #E30000;
+  }
+  
 
 /* animations */
 .slide-in-blurred-top {
