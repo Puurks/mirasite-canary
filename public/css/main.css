@@ -196,43 +196,27 @@ html #startbu:active {
 }
 
 
-/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
-/** {
-  scrollbar-width: thin;
-  scrollbar-color: #750000 #DFE9EB;
-}*/
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #a30000 #ffffff;
+  }
 
-/* Chrome, Edge and Safari */
-*::-webkit-scrollbar {
-    height: 10px;
-    width: 10px;
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
   }
+
   *::-webkit-scrollbar-track {
-    border-radius: 5px;
-    background-color: #DFE9EB;
+    background: #ffffff;
   }
-  
-  *::-webkit-scrollbar-track:hover {
-    background-color: #B8C0C2;
-  }
-  
-  *::-webkit-scrollbar-track:active {
-    background-color: #B8C0C2;
-  }
-  
+
   *::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: #750000;
+    background-color: #a30000;
+    border-radius: 10px;
+    border: 0px none;
   }
-  
-  *::-webkit-scrollbar-thumb:hover {
-    background-color: #BC0000;
-  }
-  
-  *::-webkit-scrollbar-thumb:active {
-    background-color: #E30000;
-  }
-  
 
 /* animations */
 .slide-in-blurred-top {
