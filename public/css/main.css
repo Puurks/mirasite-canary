@@ -31,6 +31,9 @@ html {
 }
 
 body {
+    --sb-track-color: #74818c;
+    --sb-thumb-color: #a90000;
+    --sb-size: 14px;
     height:100%;
     overflow: hidden; 
     pointer-events: none;
@@ -196,11 +199,6 @@ html #startbu:active {
 }
 
 
-body {
-    --sb-track-color: #74818c;
-    --sb-thumb-color: #a90000;
-    --sb-size: 14px;
-  }
   
   body::-webkit-scrollbar {
     width: var(--sb-size)
