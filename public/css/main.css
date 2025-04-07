@@ -31,6 +31,7 @@
 html {
     min-height:100%;
     position:relative;
+    font-family: 'VCR-JP', sans-serif;
 }
 
 body {
@@ -216,28 +217,28 @@ html #startbu:active {
   visibility: visible;
 }
 #pfps {
-  visibility: hidden;
+  display: none;
 }
 #pfps:target {
-  visibility: visible;
+  display: inline;
 }
 #covers {
-  visibility: hidden;
+  display: none;
 }
 #covers:target {
-  visibility: visible;
+  display: inline;
 }
 #stickers {
-  visibility: hidden;
+  display: none;
 }
 #stickers:target {
-  visibility: visible;
+  display: inline;
 }
 #etc {
-  visibility: hidden;
+  display: none;
 }
 #etc:target {
-  visibility: visible;
+  display: inline;
 }
 
 
