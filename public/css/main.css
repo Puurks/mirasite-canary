@@ -212,8 +212,10 @@ html #startbu:active {
 #pfps:target {
   visibility: visible;
 }
-#pfps:target ~ #gallery {
+#gallery:has(> pfps:target) {
   visibility: visible;
+}
+#pfps:target ~ #gallery {
 } 
 #gifs:target ~ #gallery {
   visibility: visible;
