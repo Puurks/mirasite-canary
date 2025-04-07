@@ -209,7 +209,13 @@ html #startbu:active {
   border-radius: 10px;
   border: 10px #ffffff solid;
 }
-#gallery:has(> :target) {
+#gallery:has(:target) {
+  visibility: visible;
+}
+#pfps {
+  visibility: hidden;
+}
+#pfps:target {
   visibility: visible;
 }
 
