@@ -212,20 +212,10 @@ html #startbu:active {
 #pfps:target {
   visibility: visible;
 }
-#gallery:has(> pfps:target) {
+#gallery:has(> #pfps:target) {
   visibility: visible;
 }
-#pfps:target ~ #gallery {
-} 
-#gifs:target ~ #gallery {
-  visibility: visible;
-} 
-#stickers:target ~ #gallery {
-  visibility: visible;
-} 
-#etc:target ~ #gallery {
-  visibility: visible;
-} 
+
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
