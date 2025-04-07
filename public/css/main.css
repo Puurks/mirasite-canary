@@ -194,7 +194,36 @@ html #startbu:active {
 #about-me:target {
     visibility: visible;
 }
-
+#gallery {
+  position:absolute;
+  overflow: auto;
+  background: rgb(250,82,255);
+  background: linear-gradient(0deg, rgba(250,82,255,1) 0%, rgba(158,0,255,1) 100%);
+  visibility: hidden;
+  bottom:5%;
+  top:5%;
+  left:5%;
+  right:5%;
+  width:90%;
+  height:90%;
+  border-radius: 10px;
+  border: 10px #ffffff solid;
+}
+#pfps:target {
+  visibility: visible;
+}
+#pfps:target ~ #gallery {
+  visibility: visible;
+} 
+#gifs:target ~ #gallery {
+  visibility: visible;
+} 
+#stickers:target ~ #gallery {
+  visibility: visible;
+} 
+#etc:target ~ #gallery {
+  visibility: visible;
+} 
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
