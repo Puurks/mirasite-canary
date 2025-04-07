@@ -218,6 +218,24 @@ html #startbu:active {
 #pfps:target {
   visibility: visible;
 }
+#covers {
+  visibility: hidden;
+}
+#covers:target {
+  visibility: visible;
+}
+#stickers {
+  visibility: hidden;
+}
+#stickers:target {
+  visibility: visible;
+}
+#etc {
+  visibility: hidden;
+}
+#etc:target {
+  visibility: visible;
+}
 
 
 /* ===== Scrollbar CSS ===== */
