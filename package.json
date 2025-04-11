@@ -1,8 +1,4 @@
 {
-    "scripts": {
-        "start": "parcel public/*.html",
-        "build": "parcel build public/*.html"
-    },
     "private": true,
     "dependencies": {
         "@vercel/edge": "^0.1.2",
