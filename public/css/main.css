@@ -272,6 +272,7 @@ html #startbu:active {
 .news-entry {
   border-bottom: 5px solid #ddd;
   padding: 15px 0;
+  background: #2b3036;
 }
 .news-title {
   font-size: 1.5em;

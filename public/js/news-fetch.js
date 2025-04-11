@@ -10,7 +10,6 @@ fetch('news.json')
         const entry = document.createElement('div');
         entry.classList.add('news-entry');
         entry.classList.add('rounded');
-        entry.classList.add('bg-secondary');
         entry.classList.add('m-5');
         entry.classList.add('p-3');
 
@@ -25,7 +24,7 @@ fetch('news.json')
         // Create and append the article date (formatted for the locale).
         const date = document.createElement('div'); 
         date.classList.add('news-date');
-        date.classList.add('text-secondary-emphasis');
+        date.classList.add('text-secondary');
         date.classList.add('h6');
 
         date.textContent = new Date(article.date).toLocaleString();
