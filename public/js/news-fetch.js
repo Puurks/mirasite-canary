@@ -10,13 +10,15 @@ fetch('news.json')
         const entry = document.createElement('div');
         entry.classList.add('news-entry');
         entry.classList.add('rounded');
-        entry.classList.add('bg-secondary-subtle');
-        entry.classList.add('m-2');
+        entry.classList.add('bg-secondary');
+        entry.classList.add('m-5');
+        entry.classList.add('p-3');
 
         // Create and append the article title.
         const title = document.createElement('div');
         title.classList.add('news-title');
         title.classList.add('text-danger');
+        title.classList.add('h3');
         title.textContent = article.title;
         entry.appendChild(title);
 
@@ -24,6 +26,8 @@ fetch('news.json')
         const date = document.createElement('div'); 
         date.classList.add('news-date');
         date.classList.add('text-secondary-emphasis');
+        date.classList.add('h6');
+
         date.textContent = new Date(article.date).toLocaleString();
         entry.appendChild(date);
 
