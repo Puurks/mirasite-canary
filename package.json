@@ -2,7 +2,9 @@
     "private": true,
     "dependencies": {
         "@vercel/edge": "^0.1.2",
+        "bootstrap": "^5.3.5",
         "bootstrap-icons": "^1.11.3",
+        "jquery": "^3.7.1",
         "next": "latest",
         "react": "latest",
         "react-dom": "latest"
