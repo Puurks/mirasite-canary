@@ -9,6 +9,7 @@ fetch('news.json')
         // Create an entry wrapper.
         const entry = document.createElement('div');
         entry.classList.add('news-entry');
+        entry.classList.add('rounded');
 
         // Create and append the article title.
         const title = document.createElement('div');

@@ -270,17 +270,17 @@ html #startbu:active {
 }
 
 .news-entry {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 5px solid #ddd;
   padding: 15px 0;
 }
 .news-title {
   font-size: 1.5em;
   margin-bottom: 5px;
-  color: #333;
+  color: lightcoral;
 }
 .news-date {
   font-size: 0.9em;
-  color: #888;
+  color: crimson;
   margin-bottom: 10px;
 }
 .news-body {
