@@ -52,7 +52,7 @@
                     <div data-depth="0.2" class="d-flex justify-content-around align-items-center">
                         <div class="row row-cols-2 gx-5 p-0 m-0 gap-0 row-gap-3 justify-content-center align-middle">
                             <div class="col-md-4 col-6 order-0 order-md-1 d-flex justify-content-end">
-                                <div class="select-button col-12 col-sm-12 col-md-9 col-lg-9 col-xxl-9" onclick="window.location = '#pfps'">
+                                <div class="select-button col-12 col-sm-12 col-md-9 col-lg-9 col-xxl-9" onclick="window.location = '#gallery'">
                                     <div data-tilt data-tilt-reverse="false" class="col-12 bg-dark rounded p-2">
                                         <img src="media/500x500.svg" alt="About XYZ" class="col-12 border-0 rounded">
                                         <p class="mt-4 text-white h1 barcode-font"><b>GALLERY</b></p>
@@ -119,28 +119,26 @@
                     </div>
                 </div>
                 <div id="news">
-                    <div class="container-fluid h-100 g-0">
-                        <div class="h-100 g-0 bg-dark">
-                            <div class="card-header">
-                                <ul class="nav nav-tabs card-header-tabs">
-                                    <li role="button" class="nav-item" aria-label="Close" onclick="window.location = '#home'">
-                                        <span class="nav-link vcr-font">
-                                            <i class="bi bi-arrow-left text-light"></i>
-                                        </span>
-                                    </li>
-                                    <span class="text-light vcr-font mx-auto">News</span>
-                                </ul>
-                            </div>
-                            <div class="overflow-y-scroll" id="news-container"></div>
+                    <div class="container-fluid bg-dark h-100 g-0">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li role="button" class="nav-item" aria-label="Close" onclick="window.location = '#home'">
+                                    <span class="nav-link vcr-font">
+                                        <i class="bi bi-arrow-left text-light"></i>
+                                    </span>
+                                </li>
+                                <span class="h1 text-light vcr-font align-self-center">News</span>
+                            </ul>
                         </div>
+                        <div class="overflow-y-scroll" id="news-container"></div>
                     </div>
                 </div>
-                <div class="z-13" id="newgallery">
+                <div class="z-13" id="gallery">
                     <div class="container-fluid h-100 g-0">
                         <div class="h-100 g-0">
                             <div class="row h-100 p-0 m-0">
                                 <div class="card col-12 bg-dark text-light text-center">
-                                    <ul class="nav nav-tabs vcr-font flex-nowrap overflow-x-scroll" id="myTab" role="tablist">
+                                    <ul class="nav nav-tabs vcr-font flex-nowrap text-nowrap overflow-x-scroll" id="myTab" role="tablist">
                                         <li role="button" class="nav-item" aria-label="Close" onclick="window.location = '#home'">
                                             <span class="nav-link vcr-font">
                                                 <i class="bi bi-arrow-left text-light"></i>
@@ -260,158 +258,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="z-13" id="gallery">
-                    <div class="container-fluid h-100 g-0">
-                        <div class="h-100 row g-0">
-                            <div class="col-md-12 card text-bg-dark">
-                                <div id="pfps" class="text-center">
-                                  <div class="card-header">
-                                    <ul class="nav nav-tabs card-header-tabs">
-                                        <li role="button" class="nav-item" aria-label="Close" onclick="window.location = '#home'">
-                                            <span class="nav-link vcr-font">
-                                                <i class="bi bi-arrow-left text-light"></i>
-                                            </span>
-                                        </li>
-                                      <li class="nav-item">
-                                        <span class="nav-link active vcr-font" aria-current="true" >Icons/Banners</span>
-                                      </li>
-                                      <li role="button" class="nav-item" onclick="window.location = '#covers'">
-                                        <span class="nav-link vcr-font" >Album Covers</span>
-                                      </li>
-                                      <li role="button" class="nav-item" onclick="window.location = '#stickers'">
-                                        <span class="nav-link vcr-font">Stickers/Emojis</span>
-                                      </li>
-                                      <li role="button" class="nav-item" onclick="window.location = '#etc'">
-                                        <span class="nav-link vcr-font">Etc.</span>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                  <div class="card-body">
-                                    <div class="container p-4">
-                                        <div class="row row-cols-3">
-                                            <div class="col p-2">
-                                                <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
-                                                <br>
-                                                <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
-                                            </div>
-                                            <div class="col p-2">
-                                                <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
-                                                <br>
-                                                <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>                                            </div>
-                                            <div class="col p-2">
-                                                <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
-                                                <br>
-                                                <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
-                                            </div>
-                                            <div class="col p-2">
-                                                <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
-                                                <br>
-                                                <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div id="covers" class="text-center">
-                                    <div class="card-header">
-                                      <ul class="nav nav-tabs card-header-tabs">
-                                          <li role="button" class="nav-item" aria-label="Close" onclick="window.location = '#home'">
-                                              <span class="nav-link vcr-font">
-                                                  <i class="bi bi-arrow-left text-light"></i>
-                                              </span>
-                                          </li>
-                                        <li role="button" class="nav-item" onclick="window.location = '#pfps'">
-                                          <span class="nav-link vcr-font">Icons/Banners</span>
-                                        </li>
-                                        <li class="nav-item">
-                                          <span class="nav-link vcr-font active" aria-current="true">Album Covers</span>
-                                        </li>
-                                        <li role="button" class="nav-item" onclick="window.location = '#stickers'">
-                                          <span class="nav-link vcr-font">Stickers/Emojis</span>
-                                        </li>
-                                        <li role="button" class="nav-item" onclick="window.location = '#etc'">
-                                          <span class="nav-link vcr-font">Etc.</span>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div class="card-body">
-                                      <div class="container p-4">
-                                          <div class="row row-cols-3">
-                                              <div class="col p-2">
-                                                  <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
-                                                  <br>
-                                                  <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
-                                              </div>
-                                              <div class="col p-2">
-                                                  <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
-                                                  <br>
-                                                  <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>                                            </div>
-                                              <div class="col p-2">
-                                                  <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
-                                                  <br>
-                                                  <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
-                                              </div>
-                                              <div class="col p-2">
-                                                  <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
-                                                  <br>
-                                                  <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div id="stickers" class="text-center">
-                                    <div class="card-header">
-                                      <ul class="nav nav-tabs card-header-tabs">
-                                          <li role="button" class="nav-item" aria-label="Close" onclick="window.location = '#home'">
-                                              <span class="nav-link vcr-font">
-                                                  <i class="bi bi-arrow-left text-light"></i>
-                                              </span>
-                                          </li>
-                                        <li role="button" class="nav-item" onclick="window.location = '#pfps'">
-                                          <span class="nav-link vcr-font">Icons/Banners</span>
-                                        </li>
-                                        <li role="button" class="nav-item" onclick="window.location = '#covers'">
-                                          <span class="nav-link vcr-font">Album Covers</span>
-                                        </li>
-                                        <li class="nav-item">
-                                          <span class="nav-link active vcr-font" aria-current="true">Stickers/Emojis</span>
-                                        </li>
-                                        <li role="button" class="nav-item" onclick="window.location = '#etc'">
-                                          <span class="nav-link vcr-font">Etc.</span>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div class="card-body">
-                                      <div class="container p-4">
-                                          <div class="row row-cols-3">
-                                              <div class="col p-2">
-                                                  <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
-                                                  <br>
-                                                  <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
-                                              </div>
-                                              <div class="col p-2">
-                                                  <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
-                                                  <br>
-                                                  <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>                                            </div>
-                                              <div class="col p-2">
-                                                  <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
-                                                  <br>
-                                                  <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
-                                              </div>
-                                              <div class="col p-2">
-                                                  <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
-                                                  <br>
-                                                  <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
-                                              </div>
-                                          </div>
-                                      </div>
                                     </div>
                                 </div>
                             </div>

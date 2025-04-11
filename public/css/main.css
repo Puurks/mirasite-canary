@@ -220,48 +220,6 @@ html #startbu:active {
 #news:target {
   visibility: visible;
 }
-#gallery {
-  position:absolute;
-  overflow: auto;
-  background: rgb(250,82,255);
-  background: linear-gradient(0deg, rgba(250,82,255,1) 0%, rgba(158,0,255,1) 100%);
-  visibility: hidden;
-  bottom:5%;
-  top:5%;
-  left:5%;
-  right:5%;
-  width:90%;
-  height:90%;
-  border-radius: 10px;
-  border: 10px #ffffff solid;
-}
-#gallery:has(:target) {
-  visibility: visible;
-}
-#pfps {
-  display: none;
-}
-#pfps:target {
-  display: inline;
-}
-#covers {
-  display: none;
-}
-#covers:target {
-  display: inline;
-}
-#stickers {
-  display: none;
-}
-#stickers:target {
-  display: inline;
-}
-#etc {
-  display: none;
-}
-#etc:target {
-  display: inline;
-}
 .nav-link {
   color:rgb();
 }
@@ -291,7 +249,7 @@ html #startbu:active {
   height: auto;
   margin-bottom: 10px;
 }
-#newgallery {
+#gallery {
   position:absolute;
   overflow: auto;
   background: rgb(250,82,255);
@@ -306,7 +264,7 @@ html #startbu:active {
   border-radius: 10px;
   border: 10px #ffffff solid;
 }
-#newgallery:target {
+#gallery:target {
   visibility: visible;
 }
 /* ===== Scrollbar CSS ===== */
