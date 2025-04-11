@@ -1,4 +1,8 @@
 {
+    "scripts": {
+        "start": "parcel ./*.html",
+        "build": "parcel build ./*.html"
+    },
     "private": true,
     "dependencies": {
         "@vercel/edge": "^0.1.2",
@@ -12,6 +16,7 @@
     "devDependencies": {
         "@types/node": "latest",
         "@types/react": "latest",
+        "parcel": "^2.14.4",
         "typescript": "latest"
     }
 }
