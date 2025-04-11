@@ -82,12 +82,16 @@
                 </div>
                 <div id="about-me">
                     <div class="container-fluid h-100 g-0 scroll-container">
-                        <button width="10vw" class="position-fixed bottom-0 start-0 z-13 bg-dark" aria-label="Close" onclick="window.location = '#home';"><i class="bi bi-house-door-fill text-light fs-1"></i></button>
                         <div class="h-100 g-0 scroll-section">
                             <div class="overflow-scroll row h-100 p-0 m-0">
                                 <div class="card col-12 col-md-8 text-center">
                                     <div class="card-header">
                                         <ul class="nav nav-tabs card-header-tabs">
+                                            <li role="button" class="nav-item" aria-label="Close" onclick="window.location = '#home'">
+                                                <span class="nav-link vcr-font">
+                                                    <i class="bi bi-arrow-left text-light"></i>
+                                                </span>
+                                            </li>
                                             <li class="nav-item">
                                                 <a class="nav-link active" aria-current="true" href="#">Active</a>
                                             </li>
@@ -115,7 +119,7 @@
                     </div>
                 </div>
                 <div id="news">
-                    <div class="container-fluid h-100 g-0 scroll-container">
+                    <div class="container-fluid h-100 g-0">
                         <button width="10vw" class="position-fixed bottom-0 start-0 z-13 bg-dark" aria-label="Close" onclick="window.location = '#home';"><i class="bi bi-house-door-fill text-light fs-1"></i></button>
                         <div class="h-100 g-0 bg-dark">
                             <div class="card-header">
@@ -125,12 +129,45 @@
                                             <i class="bi bi-arrow-left text-light"></i>
                                         </span>
                                     </li>
-                                    <li>
+                                    <li class="nav-item disabled" aria-label="News">
                                         <span class="text-light vcr-font">News</span>
                                     </li>
                                 </ul>
                             </div>
                             <div class="overflow-y-scroll" id="news-container"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="z-13" id="newgallery">
+                    <div class="container-fluid h-100 g-0">
+                        <div class="h-100 g-0">
+                            <div class="overflow-scroll row h-100 p-0 m-0">
+                                <div class="card col-12 col-md-8 text-center">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+                                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+                                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+                                        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+                                      </div>
+                                </div>
+                                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center p-0 m-0">
+                                    <img src="media/500x500.svg" class="col-6 col-sm-8 col-md-12 align-self-center">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
