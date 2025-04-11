@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "start": "parcel ./*.html",
-        "build": "parcel build ./*.html"
+        "start": "parcel",
+        "build": "parcel build"
     },
     "private": true,
     "dependencies": {
