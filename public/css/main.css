@@ -198,6 +198,28 @@ html #startbu:active {
 #about-me:target {
     visibility: visible;
 }
+#news {
+  position:absolute;
+  overflow: auto;
+  background: rgb(150,82,255);
+  background: -moz-linear-gradient(180deg, rgba(150,82,255,1) 0%, rgba(58,0,255,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(150,82,255,1) 0%, rgba(58,0,255,1) 100%);
+  background: linear-gradient(180deg, rgba(150,82,255,1) 0%, rgba(58,0,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9652ff",endColorstr="#3a00ff",GradientType=1);
+  visibility: hidden;
+  z-index: 11;
+  bottom:5%;
+  top:5%;
+  left:5%;
+  right:5%;
+  width:90%;
+  height:90%;
+  border-radius: 10px;
+  border: 10px #ffffff solid;
+}
+#news:target {
+  visibility: visible;
+}
 #gallery {
   position:absolute;
   overflow: auto;
@@ -240,7 +262,36 @@ html #startbu:active {
 #etc:target {
   display: inline;
 }
+.nav-link {
+  color:rgb();
+}
+.nav-link:hover {
+  color:white;
+}
 
+.news-entry {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+.news-title {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: #333;
+}
+.news-date {
+  font-size: 0.9em;
+  color: #888;
+  margin-bottom: 10px;
+}
+.news-body {
+  font-size: 1em;
+  line-height: 1.5;
+}
+.news-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */

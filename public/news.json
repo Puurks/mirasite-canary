@@ -1,0 +1,14 @@
+[
+    {
+      "title": "Test Article 2",
+      "date": "2025-04-10T12:00:00Z",
+      "image": "https://example.com/images/feature.jpg",
+      "body": "hi."
+    },
+    {
+      "title": "Test Article 1",
+      "date": "2025-04-09T08:30:00Z",
+      "body": "hi."
+    }
+  ]
+  
