@@ -3,8 +3,10 @@ This is a [Next.js](https://nextjs.org/) project. Next.js is utilized for dynami
 
 ### Attributions
 Uses:
-* Jquery
-* unfinished
+* [jQuery](https://jquery.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [parallax.js](https://matthew.wagerfield.com/parallax/)
+* [vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/index.html)
 
 ## Getting Started
 
