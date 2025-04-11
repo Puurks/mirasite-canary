@@ -10,7 +10,8 @@ fetch('news.json')
         const entry = document.createElement('div');
         entry.classList.add('news-entry');
         entry.classList.add('rounded');
-        entry.classList.add('bg-light-subtle');
+        entry.classList.add('bg-secondary-subtle');
+        entry.classList.add('m-2');
 
         // Create and append the article title.
         const title = document.createElement('div');
