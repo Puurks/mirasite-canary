@@ -142,30 +142,128 @@
                     <div class="container-fluid h-100 g-0">
                         <div class="h-100 g-0">
                             <div class="overflow-scroll row h-100 p-0 m-0">
-                                <div class="card col-12 col-md-8 text-center">
+                                <div class="card col-12 bg-dark text-center">
                                     <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                                        <li role="button" class="nav-item" aria-label="Close" onclick="window.location = '#home'">
+                                            <span class="nav-link vcr-font">
+                                                <i class="bi bi-arrow-left text-light"></i>
+                                            </span>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                                          <button class="nav-link active" id="icons-tab" data-bs-toggle="tab" data-bs-target="#icons-tab-pane" type="button" role="tab" aria-controls="icons-tab-pane" aria-selected="true">icons/banners</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                                          <button class="nav-link" id="covers-tab" data-bs-toggle="tab" data-bs-target="#covers-tab-pane" type="button" role="tab" aria-controls="covers-tab-pane" aria-selected="false">album covers</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+                                          <button class="nav-link" id="stickers-tab" data-bs-toggle="tab" data-bs-target="#stickers-tab-pane" type="button" role="tab" aria-controls="stickers-tab-pane" aria-selected="false">stickers/emoji</button>
                                         </li>
-                                      </ul>
-                                      <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
-                                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-                                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-                                        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
-                                      </div>
-                                </div>
-                                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center p-0 m-0">
-                                    <img src="media/500x500.svg" class="col-6 col-sm-8 col-md-12 align-self-center">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="etc-tab" data-bs-toggle="tab" data-bs-target="#etc-tab-pane" type="button" role="tab" aria-controls="etc-tab-pane" aria-selected="false" >etc.</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content vcr-font" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="icons-tab-pane" role="tabpanel" aria-labelledby="icons-tab" tabindex="0">
+                                            <div class="container p-4">
+                                                <div class="row row-cols-3">
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
+                                                    </div>
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>                                            </div>
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
+                                                    </div>
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="covers-tab-pane" role="tabpanel" aria-labelledby="covers-tab" tabindex="0">
+                                            <div class="container p-4">
+                                                <div class="row row-cols-3">
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
+                                                    </div>
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>                                            </div>
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
+                                                    </div>
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="stickers-tab-pane" role="tabpanel" aria-labelledby="stickers-tab" tabindex="0">
+                                            <div class="container p-4">
+                                                <div class="row row-cols-3">
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
+                                                    </div>
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>                                            </div>
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
+                                                    </div>
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="etc-tab-pane" role="tabpanel" aria-labelledby="etc-tab" tabindex="0">
+                                            <div class="container p-4">
+                                                <div class="row row-cols-3">
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
+                                                    </div>
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Art by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>                                            </div>
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
+                                                    </div>
+                                                    <div class="col p-2">
+                                                        <img class="img-thumbnail" alt="Base by @" src="/media/500x500.svg">
+                                                        <br>
+                                                        <span class="vcr-font">Art by <a href="">@XYZ</a> on XYZ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
