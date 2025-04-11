@@ -11,9 +11,9 @@ export default function handler(req, res) {
 
     // Build the RSS feed XML.
     let rss = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>`;
-    rss += `<title>Your Site News</title>`;
-    rss += `<link>https://your-site.vercel.app</link>`;
-    rss += `<description>Latest news from our website</description>`;
+    rss += `<title>Miracat's Website</title>`;
+    rss += `<link>https://www.miracat.net</link>`;
+    rss += `<description>Miracat's most recent news.</description>`;
     rss += `<language>en-us</language>`;
 
     newsItems.forEach(item => {

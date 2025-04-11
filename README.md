@@ -1,3 +1,27 @@
+# Canary Version of Miracat's Website
+This is a [Next.js](https://nextjs.org/) project. Next.js is utilized for dynamically generating the sitemap every build. The website runs fine without Next.js, but Next.js is used for SEO purposes.
+
+### Attributions
+Uses:
+* Jquery
+* unfinished
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `public/index.html`. The page auto-updates as you edit the file.
+
+
+## Copyright
 Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 
 This work is licensed under a
