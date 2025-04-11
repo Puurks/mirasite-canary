@@ -1,4 +1,3 @@
-// Fetch the JSON file containing news articles.
 fetch('news.json')
 .then(response => response.json())
 .then(data => {
@@ -30,7 +29,6 @@ fetch('news.json')
         date.textContent = new Date(article.date).toLocaleString();
         entry.appendChild(date);
 
-        // If an image URL exists, add an image.
         if (article.image) {
             const img = document.createElement('img');
             img.classList.add('news-image');
@@ -42,6 +40,7 @@ fetch('news.json')
         // Create and append the news body text.
         const body = document.createElement('div');
         body.classList.add('news-body');
+        body.classList.add('text-light');
         body.textContent = article.body;
         entry.appendChild(body);
 
